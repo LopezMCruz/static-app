@@ -22,7 +22,3 @@ func main() {
 func home(c echo.Context) error {
 	return c.File("index.html")
 }
-
-//func aboutPage(c echo.Context) error {
-//	return c.File("static/index.html")
-//}
