@@ -13,6 +13,7 @@ func main() {
 
 	// define routes
 	e.GET("/", home)
+	e.GET("/dracula", dracula)
 	//e.GET("/about", aboutPage)
 
 	// start the server
@@ -21,4 +22,8 @@ func main() {
 
 func home(c echo.Context) error {
 	return c.File("index.html")
+}
+
+func dracula(c echo.Context) error {
+	return c.File("dracula.html")
 }
