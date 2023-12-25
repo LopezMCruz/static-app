@@ -2,27 +2,27 @@ package main
 
 import (
 	"github.com/labstack/echo/v4"
-//"net/http"
+	// "net/http"
 )
 
 func main() {
 	// create new instance
 	e := echo.New()
-	
+
 	e.Static("/", "static")
 
 	// define routes
-	e.GET("/", homePage)
-	e.GET("/about", aboutPage)
-	
+	e.GET("/", home)
+	//e.GET("/about", aboutPage)
+
 	// start the server
 	e.Logger.Fatal(e.Start(":8081"))
 }
 
-func homePage(c echo.Context) error {
-	return c.File("static/index.html")
+func home(c echo.Context) error {
+	return c.File("index.html")
 }
 
-func aboutPage(c echo.Context) error {
-	return c.File("static/index.html")
-}
+//func aboutPage(c echo.Context) error {
+//	return c.File("static/index.html")
+//}
