@@ -1,0 +1,21 @@
+html {
+	font-size: 22px;
+}
+
+body {
+	background-color: #333;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+p{
+	line-height:1.6;
+	margin-bottom:1rem;
+}
+
+@media (max-width: 600px) {
+	p{
+		line-height: 1.4;
+		margin-bottom: 0.8rem;
+	}
+}
