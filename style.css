@@ -8,12 +8,23 @@ body {
 	font-family: sans-serif;
 }
 
+h1 {
+	font-size: 2em;
+	margin-bottom: .5em;
+}
+
 p{
 	line-height:1.6;
 	margin-bottom:1rem;
 }
 
 @media (max-width: 600px) {
+
+	h1{
+		font-size: 1.5em;
+	}
+
+
 	p{
 		line-height: 1.4;
 		margin-bottom: 0.8rem;
